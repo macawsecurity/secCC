@@ -1,36 +1,28 @@
-# secCC - Secure Claude Code
+# secCC
 
-Deterministic controls for fully autonomous AI agents.
+Deterministic controls for coding agents. MACAW sits between Claude Code or
+Codex and everything it reaches — tools, files, the network, the model itself —
+and decides what runs.
 
-## Installation
+## Install
 
 ```bash
-curl -sSL seccc.ai/install | bash
+npm install -g macaw-ai && macaw-ai install
 ```
 
-Then run:
-```bash
-seccc --install    # First-time setup (enter API key)
-seccc              # Start Secure Claude Code
-```
+Node.js 18 or later, on macOS arm64, Windows x64, or Linux x64 with glibc 2.38
+or later (Ubuntu 24.04, Debian 13). The first install creates a workspace,
+which you approve in a browser. The package is
+[`@macaw-ai/coding-agents`](https://www.npmjs.com/package/@macaw-ai/coding-agents),
+and its README covers running agents, signing in and removal.
 
-## Features
-
-- **Fail-close security** - If sidecar unreachable, all tool use blocked
-- **MAPL v2.5 policies** - Capability-aware semantic analysis
-- **Hash chain auditing** - Cryptographic integrity for all operations
-- **Anthropic API proxying** - Transparent LLM call interception
-
-## Supported Platforms
-
-- macOS (Apple Silicon M1/M2/M3/M4)
-
-More platforms coming soon. [Contact us](mailto:secCC@macawsecurity.com) to request your platform.
+The releases in this repository are from before the npm packages; they are
+kept for anyone pinned to them.
 
 ## Documentation
 
-https://seccc.ai/docs
+https://macawsecurity.ai/docs
 
-## License
+## Licence
 
-Proprietary - MACAW Security Inc.
+Commercial. MACAW Security, Inc.
